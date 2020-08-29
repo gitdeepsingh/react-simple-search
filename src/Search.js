@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import PropTypes from 'prop-types';
+import './Search.css';
 
-class Search extends Component {
+export default class Search extends Component {
 
     state = {
         value: '',
@@ -22,7 +23,7 @@ class Search extends Component {
 
     render() {
         const { value } = this.state;
-        const { hideClearIcon, showSearchButton } = this.props;
+        const { hideClearIcon, showSearchButton, } = this.props;
         return (
             <div className="__mainWrapper" >
                 <div className="__inputWrapper" style={{ position: ' relative' }}>
@@ -42,15 +43,22 @@ class Search extends Component {
 
                 {showSearchButton ?
                     (<div className="__buttonWrapper">
-                        <button type="button"s>
+                        <button type="button">
                             <div className="__searchglassIcon" role="img" aria-label="search">&#9906;</div>
                         </button>
                     </div>) : null
                 }
-            </div >
+            </div>
         );
     }
-
 }
 
-export default Search;
+Search.defaultProps = {
+    hideClearIcon: false,
+    showSearchButton: false,
+}
+
+Search.propTypes = {
+    hideClearIcon: PropTypes.bool,
+    showSearchButton: PropTypes.bool,
+}
