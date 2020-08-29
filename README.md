@@ -1,6 +1,6 @@
 *a very simple searchbar component for reactjs*
 
-###Props
+### Props
 
 Prop name | type | default | isRequired
 --------- | ---- | -------- |---------
