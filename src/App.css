@@ -1,0 +1,38 @@
+.__mainWrapper {
+  display: flex;
+}
+
+.__inputWrapper {
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.__buttonWrapper {
+  display: inline-block;
+  margin: 6px 0 0 0;
+}
+
+.__searchglassIcon {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  font-size: 1.05rem;
+}
+
+.__buttonWrapper button {
+  padding: 0.25rem 2rem;
+  cursor: pointer;
+  outline: 0px;
+  background-color: rgb(247, 211, 249);
+  border-radius: 7px;
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.__buttonWrapper button:hover {
+  background-color: rgb(232, 186, 235);
+}
+
+.__buttonWrapper button:active {
+  transform: translateY(0.5px);
+}
