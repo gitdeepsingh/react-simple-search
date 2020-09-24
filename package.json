@@ -1,6 +1,6 @@
 {
   "name": "react-simple-search",
-  "version": "1.0.1",
+  "version": "2.1.0",
   "description": "simple react searchbar component",
   "main": "./lib/ReactSimpleSearch.js",
   "author": {
